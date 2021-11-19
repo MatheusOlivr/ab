@@ -2,13 +2,27 @@
 	namespace App\Controllers;
 	class IndexController
 	{
+		private $view;
+		public function __construct()
+		{
+			$this->view = new \stdClass();
+		}
 		public function index()
 		{
-			echo "Chegamos ao indexcontroller e disparamos a action index";
+			$this->view->data = array("sofa","cadeira","cama");
+			$this->render("index");
 		}
 		public function sobreNos()
 		{
-			echo "Chegamos ao index controller e disparamos a action sobreNos";
+			$this->view->data = array("notebook","smartphone");
+			$this->render("sobre_nos");	
+		}
+		protected function render($view)
+		{
+			$getClass = get_class($this);
+			$getClass = str_replace("App\\Controllers\\","",$getClass);
+			$getClass = str_replace("Controller","",$getClass);
+			require_once("../App/Views/".$getClass.DIRECTORY_SEPARATOR.$view.".phtml");
 		}
 	}
 ?>
