@@ -1,9 +1,8 @@
 <?php
 	namespace App;
-	use MF\Init\Boosttrap;
+	use MF\Init\Bootstrap;
 	class Route extends Bootstrap
 	{
-		private $routes;
 		protected function initRoutes()
 		{
 			$routes =
