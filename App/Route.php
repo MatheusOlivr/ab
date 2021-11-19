@@ -1,4 +1,4 @@
-<?php 
+<?php
 	namespace App;
 	use MF\Init\Boosttrap;
 	class Route extends Bootstrap
