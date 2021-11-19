@@ -1,12 +1,8 @@
 <?php 
 	namespace App\Controllers;
-	class IndexController
+	use MF\Controller\Action;
+	class IndexController extends Action
 	{
-		private $view;
-		public function __construct()
-		{
-			$this->view = new \stdClass();
-		}
 		public function index()
 		{
 			$this->view->data = array("sofa","cadeira","cama");
@@ -16,13 +12,6 @@
 		{
 			$this->view->data = array("notebook","smartphone");
 			$this->render("sobre_nos");	
-		}
-		protected function render($view)
-		{
-			$getClass = get_class($this);
-			$getClass = str_replace("App\\Controllers\\","",$getClass);
-			$getClass = str_replace("Controller","",$getClass);
-			require_once("../App/Views/".$getClass.DIRECTORY_SEPARATOR.$view.".phtml");
 		}
 	}
 ?>
