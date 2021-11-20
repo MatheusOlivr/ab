@@ -17,7 +17,7 @@
 				[
 					"route" => "/sobre_nos",
 					"controller" => "indexController",
-					"action" => "sobre_nos"
+					"action" => "sobreNos"
 				]
 			];
 			$this->setRoutes($routes);
