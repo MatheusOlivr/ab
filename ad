@@ -1,0 +1,69 @@
+[33mcommit 17cdf7ab70f0d09517584705435004ede5108ba1[m[33m ([m[1;36mHEAD -> [m[1;32mrevisao1[m[33m)[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Fri Nov 19 17:14:10 2021 -0300
+
+    Configura o IndexController para exibir as views que forâo criadas.
+    
+    O IndexController agora exibe as views de forma correta.
+
+[33mcommit 5b68ae536422b4cb624d5a11c7a039dfb902b42b[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 10:41:59 2021 -0300
+
+    Coloca os metodos da classe route.php na classe bootstrap.php
+    
+    Todos os métodos, exceto o initRoute() forão movidos para o arquivo
+    bootstrap.php que fica dentro da pasta Init, que por sua vez fica dentro
+    da pasta do nosso projeto (MF).
+
+[33mcommit 78c3dd8e45dc83650b6db1ea418d585223bd92c2[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 09:41:22 2021 -0300
+
+    Configura o IndexControllers.php e o index agora acessa a classe route.
+    
+    O arquivo indexController agora exibe uma mensagem para cada rota
+    acessada e o index.php ao ser acessado retorna essa mensagem, que muda
+    de acordo com a rota acessada
+
+[33mcommit edb067ba1ddec35a57c5ba8d3adc2565d2ec0ed2[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 09:38:51 2021 -0300
+
+    Configura o arquivo route.php para acessar as rotas do nosso framework
+    
+    Ele agora acessa o  arquvio indexController.php que está na pasta
+    Controllers e executa o método correspondente aquela rota
+
+[33mcommit bcb2bceb779732a2bf41153b4ca299951afc0f45[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 08:48:57 2021 -0300
+
+    Cria o arquivo .htaccess, a classe Route.php
+
+[33mcommit bd63fc60a888ae0270fb5606e23c2c2eac76bb0a[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 00:08:02 2021 -0300
+
+    Cria e escreve o arquivo readme.md
+
+[33mcommit 9601c04ed9649914c25107d459b979ced77d92dd[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 00:02:11 2021 -0300
+
+    Coloca o require do autoload do composer no arquivo index.php
+
+[33mcommit 6f54cb7ffb47d17bc666d163579cb90dfc2b59c4[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Thu Nov 18 00:00:49 2021 -0300
+
+    Instala e configura o composer e move a pasta public
+    
+    O arquivo composer.json do projeto foi configurado e a pasta public
+    foi movida para a raiz do projeto, pois estava no diretório errado.
+
+[33mcommit 82b86f21f31529f1a2d2860ae39f83c922f942b4[m
+Author: MatheusOlivr <contato.matheusoliv@gmail.com>
+Date:   Wed Nov 17 23:29:32 2021 -0300
+
+    Cria a estrutura básica do projeto no padrão MVC

@@ -1,24 +1,18 @@
 <?php 
 	namespace App\Controllers;
-	class IndexController
+	use MF\Controllers\Action;
+	class IndexController extends Action
 	{
-		private $view;
+		protected $layout = "layout1";
 		public function index()
 		{
 			echo "Estamos na rota Index";
-			$this->render("index");
+			$this->render("index",$this->layout);
 		}
 		public function sobreNos()
 		{
 			echo "Estamos na rota sobreNos";
-			$this->render("sobre_nos");
-		}
-		public function render($view)
-		{
-			$getClass = get_class($this);
-			$getClass = str_replace("App\\Controllers\\","",$getClass);
-			$getClass = str_replace("Controller","",$getClass);
-			require_once("../App/Views/".$getClass.DIRECTORY_SEPARATOR.$view.".phtml");
+			$this->render("sobre_nos",$this->layout);
 		}
 	}
 ?>
