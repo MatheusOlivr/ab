@@ -6,12 +6,12 @@
 		public function index()
 		{
 			$this->view->data = array("sofa","cadeira","cama");
-			$this->render("index");
+			$this->render("index","layoutDefault");
 		}
 		public function sobreNos()
 		{
 			$this->view->data = array("notebook","smartphone");
-			$this->render("sobre_nos");	
+			$this->render("sobre_nos","layoutDefault");	
 		}
 	}
 ?>
