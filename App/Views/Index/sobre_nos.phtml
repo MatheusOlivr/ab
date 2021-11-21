@@ -6,5 +6,11 @@
 </head>
 <body>
 	<h1>VOCÊ ESTÁ NO SOBRE NOS</h1>
+	<?php 
+		foreach($this->view->products as $key => $product)
+		{
+			echo $product["id"]."</br>".$product["descricao"]."</br>".$product["preco"]."</br>";
+		}
+	?>
 </body>
 </html>

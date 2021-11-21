@@ -2,7 +2,7 @@
 	namespace MF\Controllers;
 	abstract class Action
 	{
-		private $view;
+		protected $view;
 		public function __construct()
 		{
 			$this->view = new \stdClass();
