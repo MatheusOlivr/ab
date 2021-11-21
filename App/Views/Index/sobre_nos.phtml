@@ -1,7 +1,20 @@
 <h1>Sobre Nos</h1>
 <?php 
 	echo "Chegamos ao index controller e disparamos a action sobreNos";
-	echo "<pre>";
-	print_r($this->view->data);
-	echo "</pre>";
+	echo "<table>";
+	echo 
+	"<tr>
+		<th>ID</th>
+		<th>NOME</th>
+		<th>PREÇO</th>
+	</tr>";
+	foreach($this->view->data as $key => $product)
+	{
+		echo "<tr>";
+		echo "<td>".$product["id"]."</td>";
+		echo "<td>".$product["descricao"]."</td>";
+		echo "<td>".$product["preco"]."</td>";
+		echo "</tr>";
+	}
+	echo "</table>";
 ?>
