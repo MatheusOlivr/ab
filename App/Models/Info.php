@@ -1,11 +1,8 @@
 <?php 
 	namespace App\Models;
-	class Info
+	use MF\Models\Model;
+	class Info extends Model
 	{
-		public function __construct(\PDO $db)
-		{
-			$this->db = $db;
-		}
 		public function getInfo()
 		{
 			$query = "SELECT id,titulo,descricao FROM tb_info";
